@@ -11,9 +11,12 @@
 		DB8B9EA21D3686C700FB0D43 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B9EA11D3686C700FB0D43 /* ViewController.swift */; };
 		DB8B9EA51D3686C700FB0D43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8B9EA31D3686C700FB0D43 /* Main.storyboard */; };
 		DB8B9EA71D3686C700FB0D43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB8B9EA61D3686C700FB0D43 /* Assets.xcassets */; };
-		DB8B9EAA1D3686C700FB0D43 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB8B9EA81D3686C700FB0D43 /* LaunchScreen.storyboard */; };
 		DB8B9EB51D3686C800FB0D43 /* EudonetCardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B9EB41D3686C800FB0D43 /* EudonetCardTests.swift */; };
 		DB8B9EC01D3686C800FB0D43 /* EudonetCardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B9EBF1D3686C800FB0D43 /* EudonetCardUITests.swift */; };
+		DB8B9ED11D368EAA00FB0D43 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B9ED01D368EAA00FB0D43 /* Contact.swift */; };
+		DB8B9ED41D36903700FB0D43 /* BlackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8B9ED31D36903700FB0D43 /* BlackBox.swift */; };
+		DBD5DCD21D36AB12006D5EA6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = DBD5DCD11D36AB12006D5EA6 /* data.json */; };
+		DBD5DCD41D36EDD8006D5EA6 /* CardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD5DCD31D36EDD8006D5EA6 /* CardViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +42,6 @@
 		DB8B9EA11D3686C700FB0D43 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB8B9EA41D3686C700FB0D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB8B9EA61D3686C700FB0D43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DB8B9EA91D3686C700FB0D43 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB8B9EAB1D3686C700FB0D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB8B9EB01D3686C800FB0D43 /* EudonetCardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EudonetCardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8B9EB41D3686C800FB0D43 /* EudonetCardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EudonetCardTests.swift; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		DB8B9EBB1D3686C800FB0D43 /* EudonetCardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EudonetCardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB8B9EBF1D3686C800FB0D43 /* EudonetCardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EudonetCardUITests.swift; sourceTree = "<group>"; };
 		DB8B9EC11D3686C800FB0D43 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB8B9ED01D368EAA00FB0D43 /* Contact.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		DB8B9ED31D36903700FB0D43 /* BlackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlackBox.swift; sourceTree = "<group>"; };
+		DBD5DCD11D36AB12006D5EA6 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		DBD5DCD31D36EDD8006D5EA6 /* CardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,11 +103,11 @@
 		DB8B9E9E1D3686C700FB0D43 /* EudonetCard */ = {
 			isa = PBXGroup;
 			children = (
-				DB8B9E9F1D3686C700FB0D43 /* AppDelegate.swift */,
-				DB8B9EA11D3686C700FB0D43 /* ViewController.swift */,
-				DB8B9EA31D3686C700FB0D43 /* Main.storyboard */,
+				DB8B9ED21D36900F00FB0D43 /* Delegate */,
+				DB8B9ECE1D368DB500FB0D43 /* Model */,
+				DB8B9ECF1D368DBD00FB0D43 /* Controller */,
+				DB8B9ECD1D368DAE00FB0D43 /* View */,
 				DB8B9EA61D3686C700FB0D43 /* Assets.xcassets */,
-				DB8B9EA81D3686C700FB0D43 /* LaunchScreen.storyboard */,
 				DB8B9EAB1D3686C700FB0D43 /* Info.plist */,
 			);
 			path = EudonetCard;
@@ -123,6 +129,41 @@
 				DB8B9EC11D3686C800FB0D43 /* Info.plist */,
 			);
 			path = EudonetCardUITests;
+			sourceTree = "<group>";
+		};
+		DB8B9ECD1D368DAE00FB0D43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B9EA31D3686C700FB0D43 /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		DB8B9ECE1D368DB500FB0D43 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DBD5DCD11D36AB12006D5EA6 /* data.json */,
+				DB8B9ED01D368EAA00FB0D43 /* Contact.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DB8B9ECF1D368DBD00FB0D43 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B9EA11D3686C700FB0D43 /* ViewController.swift */,
+				DBD5DCD31D36EDD8006D5EA6 /* CardViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		DB8B9ED21D36900F00FB0D43 /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				DB8B9E9F1D3686C700FB0D43 /* AppDelegate.swift */,
+				DB8B9ED31D36903700FB0D43 /* BlackBox.swift */,
+			);
+			name = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +270,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB8B9EAA1D3686C700FB0D43 /* LaunchScreen.storyboard in Resources */,
 				DB8B9EA71D3686C700FB0D43 /* Assets.xcassets in Resources */,
+				DBD5DCD21D36AB12006D5EA6 /* data.json in Resources */,
 				DB8B9EA51D3686C700FB0D43 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +299,9 @@
 			files = (
 				DB8B9EA21D3686C700FB0D43 /* ViewController.swift in Sources */,
 				DB8B9EA01D3686C700FB0D43 /* AppDelegate.swift in Sources */,
+				DB8B9ED11D368EAA00FB0D43 /* Contact.swift in Sources */,
+				DBD5DCD41D36EDD8006D5EA6 /* CardViewController.swift in Sources */,
+				DB8B9ED41D36903700FB0D43 /* BlackBox.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,14 +343,6 @@
 				DB8B9EA41D3686C700FB0D43 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DB8B9EA81D3686C700FB0D43 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DB8B9EA91D3686C700FB0D43 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -482,6 +518,7 @@
 				DB8B9EC61D3686C800FB0D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB8B9EC71D3686C800FB0D43 /* Build configuration list for PBXNativeTarget "EudonetCardTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +527,7 @@
 				DB8B9EC91D3686C800FB0D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB8B9ECA1D3686C800FB0D43 /* Build configuration list for PBXNativeTarget "EudonetCardUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +536,7 @@
 				DB8B9ECC1D3686C800FB0D43 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

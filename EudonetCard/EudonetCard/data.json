@@ -1,0 +1,89 @@
+{
+  "ResultInfos": {
+        "ApiMessage": "",
+        "ErrorMessage": "",
+        "ErrorNumber": 0,
+        "Success": true
+    },
+  "ResultData": {
+    "Rows": [
+      {
+        "DelAllowed": true,
+        "Fields": [          
+          {
+            "DbValue": "Monsieur",
+            "DescId": 207,
+            "UpdateAllowed": true,
+            "Value": "Monsieur",
+            "ViewAllowed": true
+          },
+          {
+            "DbValue": "MAGINOT",
+            "DescId": 201,
+            "UpdateAllowed": true,
+            "Value": "MAGINOT Raphaël",
+            "ViewAllowed": true
+          },
+          {
+            "DbValue": "Raphaël",
+            "DescId": 202,
+            "UpdateAllowed": true,
+            "Value": "Raphaël",
+            "ViewAllowed": true
+          },
+          {
+            "DbValue": "11 avenue Dubonnet",
+            "DescId": 402,
+            "FileId": 97140,
+            "UpdateAllowed": true,
+            "Value": "11 avenue Dubonnet",
+            "ViewAllowed": true
+          },
+          {
+            "DbValue": "Etage 1",
+            "DescId": 407,
+            "FileId": 97140,
+  	    "UpdateAllowed": true,
+            "Value": "11 avenue Dubonnet",
+            "ViewAllowed": true
+          }
+        ],
+        "FileId": 0,
+        "UpdateAllowed": true
+      }
+    ]
+  },
+  "ResultMetaData": {
+    "Tables": [
+      {
+        "AddAllowed": true,
+        "CalendarEnabled": true,
+        "DescId": 0,
+        "EdnType": 0,
+        "Fields": [
+          {
+            "DescId": 0,
+            "Disporder": 0,
+            "EdnFormat": 0,
+            "Label": "string",
+            "Mandatory": true,
+            "Multiple": true,
+            "PopupDescId": 0,
+            "PopupType": 0,
+            "UpdateAllowed": true,
+            "ViewAllowed": true
+          }
+        ],
+        "Icon": "string",
+        "Label": "string",
+        "Links": [
+          0
+        ]
+      }
+    ],
+    "TotalPages": 0,
+    "TotalRows": 0,
+    "NumPage": 0,
+    "RowsByPage": 0
+  }
+}

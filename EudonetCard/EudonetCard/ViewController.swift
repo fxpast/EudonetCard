@@ -9,17 +9,45 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    
+    
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let orient = UIApplication.sharedApplication().statusBarOrientation
+        
+        if  orient.isLandscape {
+            
+            print("rotation paysage")
+            self.performSegueWithIdentifier("carte", sender: self)
+        }
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewWillTransitionToSize(size: CGSize, withTransitionCoordinator coordinator: UIViewControllerTransitionCoordinator) {
+        
+        super.viewWillTransitionToSize(size, withTransitionCoordinator: coordinator)
+        
+        coordinator.animateAlongsideTransition({ (context) in
+            
+            let orient = UIApplication.sharedApplication().statusBarOrientation
+            
+            if  orient.isLandscape {
+                
+                print("rotation paysage")
+                self.performSegueWithIdentifier("carte", sender: self)
+            }
+            
+        }) { (context) in
+            print("rotation complete")
+        }
+        
+        
     }
-
-
+    
+    
+    
 }
 
