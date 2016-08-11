@@ -1,10 +1,11 @@
 //
-//  Data.swift
-//  PressShare
+//  Contact.swift
+//  EudonetCard
 //
-//  Created by MacbookPRV on 11/05/2016.
+//  Created by MacbookPRV on 13/07/2016.
 //  Copyright © 2016 Pastouret Roger. All rights reserved.
 //
+
 
 import Foundation
 import UIKit

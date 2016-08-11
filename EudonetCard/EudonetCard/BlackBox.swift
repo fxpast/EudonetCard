@@ -1,10 +1,11 @@
 //
 //  BlackBox.swift
-//  On the Map
+//  EudonetCard
 //
-//  Created by MacbookPRV on 03/05/2016.
+//  Created by MacbookPRV on 13/07/2016.
 //  Copyright © 2016 Pastouret Roger. All rights reserved.
 //
+
 
 
 import Foundation

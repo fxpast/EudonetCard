@@ -13,14 +13,17 @@ class CardViewController: UIViewController {
     @IBOutlet weak var IBPhoto: UIImageView!
     @IBOutlet weak var IBCodeBarre: UIImageView!
     @IBOutlet weak var IBLinkedIn: UIImageView!
-    @IBOutlet weak var IBFacebook: UIImageView!
+    @IBOutlet weak var IBViadeo: UIImageView!
     @IBOutlet weak var IBTwitter: UIImageView!
-    @IBOutlet weak var IBLabel1: UILabel!
-    @IBOutlet weak var IBLabel2: UILabel!
-    @IBOutlet weak var IBLabel3: UILabel!
-    @IBOutlet weak var IBLabel4: UILabel!
-    @IBOutlet weak var IBLabel5: UILabel!
-    
+    @IBOutlet weak var IBRuban: UILabel!
+    @IBOutlet weak var IBLigne1: UILabel!
+    @IBOutlet weak var IBLigne2: UILabel!
+    @IBOutlet weak var IBLigne3: UILabel!
+    @IBOutlet weak var IBLigne4: UILabel!
+    @IBOutlet weak var IBLigne5: UILabel!
+    @IBOutlet weak var IBLigne6: UILabel!
+    @IBOutlet weak var IBLigne7: UILabel!
+    @IBOutlet weak var IBLigne8: UILabel!
     
     let contact = Contact()
     
@@ -33,7 +36,7 @@ class CardViewController: UIViewController {
         super.viewWillAppear(animated)
         
         self.IBLinkedIn.image = UIImage(named: "linkedin")
-        self.IBFacebook.image = UIImage(named: "facebook")
+        self.IBViadeo.image = UIImage(named: "viadeo")
         self.IBTwitter.image = UIImage(named: "twitter")
         
         getContact { (success, contact, errorString) in
@@ -48,12 +51,20 @@ class CardViewController: UIViewController {
                     self.IBPhoto.layer.cornerRadius = self.IBPhoto.frame.height/4
                     self.IBPhoto.clipsToBounds = true
                     self.IBPhoto.image = contact?.photo
-                    
                     self.IBCodeBarre.image = contact?.codebarre2d
-                    self.IBLabel2.text = "\(contact!.prenom) \(contact!.nom)"
-                    self.IBLabel3.text = contact?.rue
-                    self.IBLabel4.text = contact?.etage
                     
+                    self.IBLigne1.text = "\(contact!.prenom) \(contact!.nom)"
+                    
+                    self.IBLigne2.text = "Directeur technique" // valeur temporaire
+                    self.IBLigne3.text = "rmaginot@eudoweb.com" // valeur temporaire
+                    
+                    self.IBLigne4.text = "Eudonet" // valeur temporaire
+                    self.IBLigne5.text = "\(contact!.rue) - \(contact!.etage)"
+                    self.IBLigne6.text = "CS 50001 - 92407 Courbevoie Cedex" // valeur temporaire
+                    
+                    self.IBLigne7.text = "Tél : +33 (0)1 47 37 53 77" // valeur temporaire
+                    
+                    self.IBLigne8.text = "www.eudoweb.com" // valeur temporaire
                     
                 }
                 
